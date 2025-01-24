@@ -5,7 +5,6 @@ namespace Tests\Feature;
 use App\Services\DniCalculator;
 use PHPUnit\Framework\TestCase;
 
-
 class DniCalculatorTest extends TestCase
 {
     public function testCalcularLetter()
