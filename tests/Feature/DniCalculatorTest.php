@@ -11,7 +11,7 @@ class DniCalculatorTest extends TestCase
         $calculator = new DniCalculator();
         $dni = "12345678";
         $letter = $calculator->calcularLetter($dni);
-        $this->assertEquals("T", $letter);
+        $this->assertEquals("Z", $letter);
     }
 
     public function testCalcularLetraConRestoIgualA23()
@@ -19,6 +19,6 @@ class DniCalculatorTest extends TestCase
         $calculator = new DniCalculator();
         $dni = "99999999";
         $letter = $calculator->calcularLetter($dni);
-        $this->assertEquals("E", $letter);
+        $this->assertEquals("R", $letter);
     }
 }
