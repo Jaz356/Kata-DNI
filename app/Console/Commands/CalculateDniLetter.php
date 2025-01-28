@@ -2,8 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Services\DniService;
+use Illuminate\Console\Command;
+
 
 Class CalculateDniLetter extends Command
 {
