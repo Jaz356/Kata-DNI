@@ -21,4 +21,12 @@ class DniCalculatorTest extends TestCase
         $letter = $calculator->calcularLetter($dni);
         $this->assertEquals("R", $letter);
     }
+
+    public function testCalcularLetterWithInvalidDni()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        $calculator = new DniCalculator();
+        $dni = "invalid_dni";
+        $calculator->calcularLetter($dni);
+    }
 }
